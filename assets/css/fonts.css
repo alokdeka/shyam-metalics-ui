@@ -1,0 +1,42 @@
+/* Poppins */
+@font-face {
+  font-family: Poppins-light;
+  src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: Poppins-regular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+/* Raleway */
+@font-face {
+  font-family: Raleway-regular;
+  src: url(../fonts/Raleway/static/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: Raleway-medium;
+  src: url(../fonts/Raleway/static/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: Raleway-semibold;
+  src: url(../fonts/Raleway/static/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Raleway-bold;
+  src: url(../fonts/Raleway/static/Raleway-Bold.ttf);
+}
+
+/* Oswald */
+@font-face {
+  font-family: Oswald-regular;
+  src: url(../fonts/Oswald/static/Oswald-Regular.ttf);
+}
+
+@font-face {
+  font-family: Oswald-bold;
+  src: url(../fonts/Oswald/static/Oswald-Bold.ttf);
+}

@@ -1,0 +1,304 @@
+/* Contents
+
+  1. Common styles
+  2. Hero Carousel
+  3. Side List
+  4. About Section
+  5. Know More Section
+
+*/
+
+/* ================================ 1. Common styles ================================== */
+.main-nav {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  background-color: #fff;
+}
+.main-nav .logo {
+  width: 15rem;
+}
+
+.main-nav .navbar-nav .nav-item .nav-link {
+  font-size: 1.4rem;
+  font-family: Raleway-semibold;
+}
+
+.main-nav .navbar-nav .nav-item .nav-link.active {
+  border-bottom: 2px solid var(--main-color);
+}
+
+.main-nav .navbar-nav .nav-item {
+  margin: 0 1rem;
+}
+
+.section-title {
+  font-family: Oswald-bold;
+  font-size: 3.5rem;
+}
+
+.line {
+  background-color: var(--main-color);
+  height: 4px;
+}
+
+.line-big {
+  width: 20rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.line-small {
+  width: 15rem;
+}
+
+.btn-common {
+  font-family: Raleway-semibold;
+  background-color: var(--main-color);
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.btn-common:hover {
+  background-color: #fff !important;
+  border: 1px solid var(--main-color) !important;
+  color: var(--main-color) !important;
+}
+
+.custom-navigation {
+  z-index: 2;
+  display: flex;
+}
+
+.custom-navigation span:first-child {
+  margin-right: 1rem;
+}
+
+.custom-navigation span {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ============================= 2. Hero carousel ============================= */
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.hero .carousel-img img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hero .navigation {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  top: 10rem;
+  left: 0;
+  background-color: black;
+  z-index: 2;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero .navigation #prev-hero-carousel,
+.hero .navigation #next-hero-carousel {
+  position: relative;
+  margin: 0 2rem;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.hero .navigation #prev-hero-carousel::before {
+  content: "";
+  position: absolute;
+  left: -12rem;
+  top: 50%;
+  width: 10rem;
+  height: 0.1rem;
+  background-color: #fff;
+}
+
+.hero .navigation #next-hero-carousel::after {
+  content: "";
+  position: absolute;
+  right: -12rem;
+  top: 50%;
+  width: 10rem;
+  height: 0.1rem;
+  background-color: #fff;
+}
+
+.boxes {
+  position: absolute;
+  bottom: -10rem;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.boxes .box {
+  aspect-ratio: 1/1;
+  width: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  border: 3px solid rgb(218, 218, 218);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.boxes .box img {
+  height: 10rem;
+}
+
+.boxes .box p {
+  font-family: Raleway-bold;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* ========================================== 3. Side list =========================================== */
+.side-list {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 9;
+  transform: translateY(-50%);
+}
+
+.side-list ul {
+  list-style-type: none;
+}
+
+.side-list ul li {
+  background-color: black;
+  height: 4.5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+.side-list ul li.active {
+  background-color: var(--main-color);
+}
+
+.side-list ul li img {
+  width: 2rem;
+}
+
+/* ===================================== 4. About section =================================== */
+.about {
+  margin-top: 20rem;
+}
+
+.about-inner {
+  position: relative;
+}
+
+.about-inner .navigation {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.about .about-single .logo {
+  width: 15rem;
+}
+
+.about .about-single p {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-family: Raleway-regular;
+  font-size: 1.3rem;
+}
+
+.about .about-single .about-single-left {
+  background: url(../img/logo10.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about .about-single .featured-image {
+  width: 100%;
+}
+
+/* =================================== 5. Know more ================================== */
+.know-more {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/image4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 0;
+  margin-top: 10rem;
+}
+
+.know-more .top-section-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.know-more .top-section-title .section-title {
+  color: #fff;
+}
+
+.know-more .top-section-title .logo {
+  width: 15rem;
+}
+
+.know-more .text {
+  font-family: Raleway-bold;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.know-more .list {
+  margin-top: 2rem;
+}
+
+.know-more .list-ul {
+  list-style-type: none;
+}
+
+.know-more .list-ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.know-more .list-ul li .image {
+  height: 6rem;
+  width: 6rem;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  border: 4px solid var(--main-color-shadow);
+}
+
+.know-more .list-ul li .image img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+}
