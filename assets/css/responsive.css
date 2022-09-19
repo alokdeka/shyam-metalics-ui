@@ -9,7 +9,11 @@
   }
 
   .hero {
-    height: unset;
+    height: 50vh;
+  }
+
+  .hero .carousel-img img {
+    height: 100%;
   }
 
   .boxes {
@@ -22,7 +26,7 @@
   }
 
   .about {
-    margin-top: unset;
+    margin-top: 25rem;
   }
 
   .about .about-single .about-single-left {
@@ -37,6 +41,14 @@
   .customers-and-clients .review-section .custom-navigation {
     padding: 0 2rem;
   }
+
+  footer .top-footer {
+    height: 30rem;
+  }
+
+  footer .top-footer p {
+    text-align: center;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -47,8 +59,20 @@
     display: inline-block;
   }
 
+  .hero {
+    height: 60vh;
+  }
+
+  .hero .carousel-img img {
+    height: 100%;
+  }
+
   .know-more {
     min-height: unset;
+  }
+
+  .about {
+    margin-top: unset;
   }
 
   .about .about-single p {
@@ -64,12 +88,20 @@
     display: none;
   }
 
+  .boxes {
+    bottom: 10rem;
+  }
+
   .boxes .box {
     height: 25rem;
   }
 
   .customers-and-clients .review-section .custom-navigation {
     padding: 0 2rem;
+  }
+
+  footer {
+    min-height: unset;
   }
 }
 

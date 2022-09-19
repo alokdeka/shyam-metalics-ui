@@ -6,7 +6,8 @@
   4. About Section
   5. Know More Section
   6. Media & Blogs
-  7. Customer and clients slider
+  7. Customer and clients slide
+  8. Footer
 
 */
 
@@ -397,9 +398,6 @@
   height: 25rem;
   border-radius: 2rem;
   background-color: #fff;
-  -webkit-box-shadow: 8px 8px 8px -3px rgba(230, 230, 230, 1);
-  -moz-box-shadow: 8px 8px 8px -3px rgba(230, 230, 230, 1);
-  box-shadow: 8px 8px 8px -3px rgba(230, 230, 230, 1);
 }
 
 .customers-and-clients .customer-and-clients-slider .box .name-and-rating {
@@ -496,4 +494,92 @@
   left: 0;
   width: 100%;
   padding: 0 5rem;
+}
+
+.clients-ribbon img {
+  height: 10rem;
+}
+
+/* ============================= 8. Footer =================================== */
+footer .top-footer {
+  height: 15rem;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .top-footer p {
+  font-family: Oswald-bold;
+  font-size: 4rem;
+  color: #fff;
+}
+
+footer .top-footer .link {
+  background-color: #111;
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: Raleway-semibold;
+  width: 15rem;
+  padding: 1rem 0;
+}
+
+footer .top-footer .link:hover {
+  background-color: #fff;
+  color: #111;
+}
+
+footer {
+  min-height: 100vh;
+  width: 100%;
+  background: url(../img/image.jpg);
+}
+
+footer .bottom-footer {
+  padding: 10rem 0;
+}
+
+footer .bottom-footer .logo {
+  width: 15rem;
+}
+
+footer .bottom-footer .text {
+  font-family: Raleway-medium;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+footer .bottom-footer .footer-social-ul {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+footer .bottom-footer .footer-social-ul img {
+  width: 3.5rem;
+}
+
+footer .title {
+  font-size: 3rem;
+  font-family: Oswald-bold;
+  color: var(--main-color);
+}
+
+footer .copyright {
+  background-color: #3b3b3b;
+  color: #fff;
+}
+
+footer .copyright .copyright_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
+
+footer .copyright .links a {
+  color: #fff;
+  text-decoration: none;
 }
