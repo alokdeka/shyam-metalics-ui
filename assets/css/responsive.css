@@ -33,6 +33,10 @@
     right: 50%;
     transform: translateX(50%);
   }
+
+  .customers-and-clients .review-section .custom-navigation {
+    padding: 0 2rem;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -62,6 +66,10 @@
 
   .boxes .box {
     height: 25rem;
+  }
+
+  .customers-and-clients .review-section .custom-navigation {
+    padding: 0 2rem;
   }
 }
 

@@ -6,6 +6,7 @@
   4. About Section
   5. Know More Section
   6. Media & Blogs
+  7. Customer and clients slider
 
 */
 
@@ -379,4 +380,120 @@
 
 .media-and-blogs .box .blog-date .month {
   font-size: 2rem;
+}
+
+/* ================================= 7. Customer and clients slider ================================ */
+.customers-and-clients {
+  background: url(../img/logo10.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.customers-and-clients .customer-and-clients-slider {
+  margin-top: 2rem;
+}
+
+.customers-and-clients .customer-and-clients-slider .box {
+  height: 25rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  -webkit-box-shadow: 8px 8px 8px -3px rgba(230, 230, 230, 1);
+  -moz-box-shadow: 8px 8px 8px -3px rgba(230, 230, 230, 1);
+  box-shadow: 8px 8px 8px -3px rgba(230, 230, 230, 1);
+}
+
+.customers-and-clients .customer-and-clients-slider .box .name-and-rating {
+  font-family: Raleway-semibold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.customers-and-clients
+  .customer-and-clients-slider
+  .box
+  .name-and-rating
+  .rating
+  i {
+  color: #ffdf00;
+}
+
+.customers-and-clients .customer-and-clients-slider .box .review-text {
+  font-family: Raleway-semibold;
+  font-size: 1.1rem;
+}
+
+.customers-and-clients .customer-and-clients-slider .box .profile-image img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.customers-and-clients .customer-and-clients-slider .box.video-review {
+  position: relative;
+  border-radius: 5rem;
+}
+
+.customers-and-clients
+  .customer-and-clients-slider
+  .box.video-review
+  .name-div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 5rem;
+  border-radius: 0 0 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers-and-clients
+  .customer-and-clients-slider
+  .box.video-review
+  .name-div
+  .name {
+  font-family: Raleway-semibold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.customers-and-clients .customer-and-clients-slider .box.video-review img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.customers-and-clients
+  .customer-and-clients-slider
+  .box.video-review
+  .youtube-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.customers-and-clients
+  .customer-and-clients-slider
+  .box.video-review
+  .youtube-logo
+  img {
+  width: 8rem;
+}
+
+.customers-and-clients .review-section {
+  position: relative;
+}
+
+.customers-and-clients .review-section .custom-navigation {
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 0 5rem;
 }
