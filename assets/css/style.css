@@ -8,6 +8,7 @@
   6. Media & Blogs
   7. Customer and clients slide
   8. Footer
+  9. Explore the design section
 
 */
 
@@ -500,6 +501,12 @@
   height: 10rem;
 }
 
+.clients-ribbon .col-md-10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ============================= 8. Footer =================================== */
 footer .top-footer {
   height: 15rem;
@@ -582,4 +589,53 @@ footer .copyright .copyright_inner {
 footer .copyright .links a {
   color: #fff;
   text-decoration: none;
+}
+
+/* ==================================== Explore the design section ==================================== */
+.designs .single-design {
+  height: 25rem;
+  width: 100%;
+  position: relative;
+}
+
+.designs .single-design img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+.designs .single-design .desc {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(1, 1, 1, 70%);
+  color: #fff;
+  padding: 1.5rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.designs .designs-carousel .owl-item.active.center .single-design .desc {
+  display: flex;
+}
+
+.designs .designs-carousel .owl-item.active.center .single-design img {
+  filter: grayscale(0%);
+}
+
+.designs .designs-carousel .owl-item.active {
+  transition: 0.3s ease;
+}
+
+.designs .designs-carousel .owl-item.active.center {
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+.designs .designs-carousel .owl-stage-outer {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
