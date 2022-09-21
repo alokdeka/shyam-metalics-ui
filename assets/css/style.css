@@ -9,6 +9,7 @@
   7. Customer and clients slide
   8. Footer
   9. Explore the design section
+  10. Gallery section
 
 */
 
@@ -88,6 +89,29 @@
   background-color: var(--main-color);
   color: #fff;
   cursor: pointer;
+}
+
+.page-header {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+}
+
+.page-header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.page-header-title {
+  font-size: 5rem;
+  font-family: Oswald-bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
 }
 
 /* ============================= 2. Hero carousel ============================= */
@@ -638,4 +662,79 @@ footer .copyright .links a {
 .designs .designs-carousel .owl-stage-outer {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+/* ======================================== Gallery section =================================== */
+.gallery .item {
+  position: relative;
+}
+
+.gallery .item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 40%);
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+.gallery .item:hover::before,
+.gallery .item:hover .title {
+  opacity: 1;
+}
+
+.gallery .video-gallery {
+  height: 30rem;
+}
+
+.gallery .video-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery .video-gallery .youtube {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5rem;
+  height: 4rem;
+}
+
+.gallery .item .title {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(1, 1, 1, 60%);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  opacity: 0;
+}
+
+.gallery .item .title p {
+  color: #fff;
+  margin-bottom: 0;
+  font-family: Raleway-bold;
+}
+
+.gallery .item .title .zoom {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.gallery .image-gallery {
+  height: 14.8rem;
+  margin-bottom: 0.1rem;
+}
+
+.gallery .image-gallery img {
+  width: 100%;
+  height: 100%;
 }
